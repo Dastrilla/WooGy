@@ -13,7 +13,12 @@
     {% endblock %}
   </div>
   <div id="sidebar">
-    <h2>My blog</h2>
+    <h1>
+      <a href="{% url 'blog:post_search' %}" >Search all what you want</a>
+    </h1>
+    <h2>
+      <a href="{% url 'blog:post_list' %}">My blog</a>
+    </h2>
     <p>This is my blog.
     I've wirtten {% total_posts %} posts so far.
   </p>
